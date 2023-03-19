@@ -2,7 +2,7 @@ import React from 'react';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import logo from './logo.svg';
 import './App.css';
-import { SampleComponent } from './components/sample-query';
+import { SampleComponent } from './components/sampleComponent';
 
 const queryClient = new QueryClient;
 

@@ -4,7 +4,7 @@ export interface QueryResponseType {
   isLoading?: boolean,
   isError?: boolean,
   data?: MovieType,
-  error?: any
+  error: QueryError | null
 }
 
 export interface QueryError {
