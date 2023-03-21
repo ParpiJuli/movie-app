@@ -6,6 +6,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
     colors: {
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
@@ -16,6 +25,10 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'neutral': '#DFD2BC',
+      'dark-blue': '#254674',
+      'red': '#E55749',
+      'light-blue': '#85ffff'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
