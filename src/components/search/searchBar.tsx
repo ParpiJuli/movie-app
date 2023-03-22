@@ -43,7 +43,7 @@ const SearchInput = tw.input`
   flex
   border-0
   justify-start;
-  px-5
+  px-2
   py-4
   sm:px-2
   lg:px-5
@@ -56,8 +56,8 @@ const SearchInput = tw.input`
 
 const SearchInputContainer = tw.div`
   bg-neutral
-  px-5
-  mx-5
+  px-2
+  mx-2
   md:mx-10
   my-auto
   rounded-full
