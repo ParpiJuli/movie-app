@@ -2,7 +2,7 @@ import {
   getOneApiUrl,
   getMoviesByGenderApiUrl,
   getMoviesKeywordApiUrl,
-  getMoviesByReleaseDate,
+  getMoviesByReleaseYear,
   getMoviePoster,
   getAllGenres
 } from './getApiUrls';
@@ -28,16 +28,11 @@ export const fetchMoviesByNameSearch= async(keyword: string) => {
 };
 
 
-export const fetchMoviesByReleaseDate= async(searchYearfrom: string | number, searchYearTo?:string | number) => {
-  const response = await fetch(getMoviesByReleaseDate(searchYearfrom, searchYearTo));
+export const fetchMoviesByReleaseDate= async(searchYear: string) => {
+  const response = await fetch(getMoviesByReleaseYear(searchYear));
   return response.json();
 };
 
-
-export const fetchMoviesByRateDate= async(searchYearfrom: string | number, searchYearTo?:string | number) => {
-  const response = await fetch(getMoviesByReleaseDate(searchYearfrom, searchYearTo));
-  return response.json();
-};
 
 export const fetchMoviePoster= async(posterPath:string) => {
   const response = await fetch(getMoviePoster(posterPath));
