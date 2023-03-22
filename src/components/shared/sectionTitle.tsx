@@ -13,6 +13,7 @@ function SectionTitle({ title, isMainTitle, size }: SectionTitleType) {
 const Container = tw.div`
   container
   pt-5
+  pt-10
   md:pt-20
   inline
   flex
@@ -22,7 +23,7 @@ const Container = tw.div`
 const Title = tw.h3<SectionTitleProps>`
   ${(p) => (p.$size ?? 'ftext-2xl')}
   font-bold
-  ${(p) => (p.$isMainTitle ? 'font-bold flex m-auto md:my-10' : 'font-normal py-2')}
+  ${(p) => (p.$isMainTitle ? 'font-bold flex m-auto mt-12' : 'font-normal py-2')}
 `;
 
 export default SectionTitle;

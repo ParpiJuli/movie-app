@@ -17,6 +17,7 @@ const MobileMenuContainer = tw.div`
   bg-red
   w-screen
   absolute
+  z-30
 `;
 
 const Menu = tw.div`

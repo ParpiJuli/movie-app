@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import tw from 'tailwind-styled-components';
 import MenuSvg from './menuSvg';
 import { getMenuItems } from '../shared/menuItems';
 import MobileMenu from './mobileMenu';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+
+  useEffect(()=> {
+    setShowMenu(false);
+  }, [location.pathname]);
 
   return (
     <Section>
@@ -30,6 +35,8 @@ function NavBar() {
 const Section = tw.div`
   bg-red
   h-[80px]
+  z-30
+  relative
   drop-shadow-lg
 `;
 

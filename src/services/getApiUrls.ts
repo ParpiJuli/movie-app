@@ -19,14 +19,12 @@ export const getMoviePoster = (posterPath: string) => {
   return `${baseImageApi}${posterPath}?api_key=${API_KEY}`;
 };
 
-export const getMoviesByReleaseDate = (searchYearfrom: string | number, searchYearTo?:string | number) => {
-  const searchDateLimit = searchYearTo ?? new Date().getFullYear();
-
-  return `${discoverMovieApi}&release_date.gte=${searchYearfrom}&release_date.lte=${searchDateLimit}`;
+export const getMoviesByReleaseYear = (searchYear: string | number) => {
+  return `${discoverMovieApi}release_date.lte=${searchYear}`;
 };
 
 export const getMoviesByGenderApiUrl = (genreId: number | string) => {
-  return `${discoverMovieApi}&with_genres=${genreId}`;
+  return `${discoverMovieApi}with_genres=${genreId}`;
 };
 
 export const getMoviesByRateApiUrl = (rate: number) => {
