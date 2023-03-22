@@ -1,6 +1,8 @@
+import tw from 'tailwind-styled-components';
 import { useQuery } from 'react-query';
 import { fetchMoviesByReleaseDate } from '../services/fetchMoviesServices';
 import { QueryResponseType } from '../types/Queries';
+import ErrorPage from '../pages/errorPage';
 
 export const SampleComponent = () => {
   const { isLoading, isError, data, error }: QueryResponseType =
@@ -10,15 +12,18 @@ export const SampleComponent = () => {
     });
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader>Loading...</Loader>;
   }
 
   if (isError) {
-    return <span>Error: {error?.message}</span>;
+    return <ErrorPage />;
   }
-
-  console.log(data);
 
   return <p>{data?.title}</p>;
 };
 
+const Loader = tw.p`
+  !bg-neutral
+  flex
+  m-auto
+`;
