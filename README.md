@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Getting Started with Movie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed by Julieta Parpinelli using ReactJS, Tailwind, Styled-Components, React Router and Yarn, as package manager.
+
+Api used is (The Movie DB)[https://developers.themoviedb.org/3/genres/get-movie-list]
+
+## Project Description
+
+This project is an app that shows users information about films. When starting the app, the user will see a Home Page that displays popular films. Users may filter movies by name or by release year. Users may also see lists of films related to certain genres. When clicking on a movie card, user will be redirected to Movie Details Page. On that same page, films related to the same genre will be offered to the user.
+
+Also, there is a Storybook Page that displays some of the main components used.
 
 ## Available Scripts
 
@@ -40,7 +48,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
