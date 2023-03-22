@@ -2,7 +2,7 @@
 
 This project was developed by Julieta Parpinelli using ReactJS, Tailwind, Styled-Components, React Router and Yarn, as package manager.
 
-Api used is (The Movie DB)[https://developers.themoviedb.org/3/genres/get-movie-list]
+Api used is [The Movie DB](https://developers.themoviedb.org/3/genres/get-movie-list)
 
 ## Project Description
 
