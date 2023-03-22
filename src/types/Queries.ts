@@ -3,7 +3,7 @@ import { MovieType } from '../types/Movies';
 export interface QueryResponseType {
   isLoading?: boolean,
   isError?: boolean,
-  data?: MovieType,
+  data?: MovieType | any,
   error: QueryError | null
 }
 
